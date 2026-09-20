@@ -12,10 +12,19 @@ const projects = [
   },
   {
     id: 2,
-    title: "Verbatim AI — Project Collaboration",
-    description: "Collaborated on AI-focused workflows and operational activities, supporting digital process execution, coordination and AI-driven productivity initiatives.",
-    image: "/assets/project1.png",
-    tag: "Collaboration"
+    title: "Starbucks Café",
+    description: "A cinematic coffee shop experience with refined visuals, menu exploration, and a premium artisan café feel.",
+    image: "/assets/starbucks-cafe-preview.webp",
+    tag: "View live project",
+    link: "https://starbucks-cafe-three.vercel.app/"
+  },
+  {
+    id: 3,
+    title: "Nagar Panchayat Sahjanwa",
+    description: "A smart civic command center prototype for Nagar Panchayat Sahjanwa, bringing services, local information, and governance into one accessible interface.",
+    image: "/assets/nagar-panchayat-sahjanwa-preview.png",
+    tag: "View live project",
+    link: "https://npsahjanwa-prototype-1.vercel.app/"
   }
 ];
 

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { BiLogoGmail } from "react-icons/bi";
-import { CgFigma } from "react-icons/cg";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -60,13 +60,16 @@ export default function Home() {
             transition={{ delay: 0.8, duration: 1 }}
           >
             {[
+              { Icon: FaGithub, href: "https://github.com/nikhil-4999", label: "Nikhil's GitHub", external: true },
+              { Icon: FaLinkedinIn, href: "https://www.linkedin.com/in/nikhil-singh-90530b2a3?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "Nikhil's LinkedIn", external: true },
               { Icon: BiLogoGmail, href: "mailto:nikhs323@gmail.com", label: "Email Nikhil" },
-              { Icon: CgFigma, href: "#projects", label: "View projects" },
-            ].map(({ Icon, href, label }) => (
+            ].map(({ Icon, href, label, external }) => (
               <motion.a
                 key={label}
                 href={href}
                 aria-label={label}
+                target={external ? "_blank" : undefined}
+                rel={external ? "noopener noreferrer" : undefined}
                 className="bg-white p-2 lg:p-3 rounded border-2 border-black"
                 whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
                 whileTap={{ scale: 0.9 }}
